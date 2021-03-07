@@ -1,0 +1,205 @@
+body{
+    margin: auto;
+}
+
+#social{
+    text-align: right;
+}
+
+#social > a{
+    text-decoration: none;
+}
+img{
+    height:50px;
+    width: 50px;
+}
+.ImageContainer{
+    background: url('https://i.ibb.co/85b18PM/food-wallpaper.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:2px solid gray;
+}
+
+#logo{
+    font-size:90px;
+    color:rgb(20, 20, 20);
+    text-align: center;
+    background: linear-gradient(130deg, rgb(235, 152, 29) ,rgb(24, 139, 173));
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    margin:auto;
+    margin-top:80px;
+    margin-bottom:40px;
+    border:2px solid black;
+}
+
+#heading{
+    text-align: center;
+    color:white;
+    font-size:35px;
+}
+
+b{
+    margin-top:95px
+}
+
+.dropdown{
+    text-align: center;
+    margin-top:40px;
+    margin-bottom:40px;
+}
+
+select{
+    height:50px;
+    width:250px;
+    font-size:20px;
+    border-radius:20px;
+    border: none;
+}
+.QuickSearchContainer{
+    margin-left:115px;
+    margin-top:50px;
+}
+
+#QuickHeading{
+    color:#192f60;
+    font-size:30px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    text-align:left
+}
+
+#QuickSubHeading{
+    color:gray;
+    font-size:20px;
+    font-weight:normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height:.01;
+    margin-top:15px;
+    position: absolute;
+    text-align:left
+}
+.tileContainer{
+    height:180px;
+    width:28%;
+    margin-top:50px;
+    margin-bottom:20px;
+    box-shadow: 0px 3px 15px black;
+    display: inline-block;
+    margin-right:5%;
+    transition: transform 1s;
+}
+
+.tileComponent1{
+    width:46%;
+    float:left;
+}
+.tileComponent2{
+    width:46%;
+    float: left;
+    margin-left:20px;
+    margin-top:20px;
+}
+
+.componentHeading{
+    text-align:left;
+    color:#192f60;
+    font-size:25px;
+    font-weight: bold;
+}
+
+.componentSubHeading{
+    color:gray;
+    font-size:18px;
+    line-height: 1;
+}
+
+.tileContainer:hover{
+    transform: scale(1.2);
+}
+
+@media screen and (min-width:400px){
+    body{
+        background-color: skyblue;
+    }
+    .tileContainer{
+        width:80%;
+    }
+}
+
+@media screen and (min-width:600px){
+    body{
+        background-color: lightseagreen;
+    }
+    .tileContainer{
+        width:60%;
+    }
+}
+
+@media screen and (min-width:800px){
+    body{
+        background-color: lightcoral;
+    }
+    .tileContainer{
+        width:40%;
+    }
+}
+
+@media screen and (min-width:1000px){
+    body{
+        background-color: rgb(246, 250, 246);
+    }
+    .tileContainer{
+        width:28%;
+    }
+}
+.flyingbird{
+    font-size:90px;
+    height:7px;
+    width:7px;
+    margin:auto;
+    margin-top:0px;
+    margin-bottom:5px;
+    margin-right:1500px;
+    animation-duration: 10s ;
+    animation-name: birdfly;
+    animation-iteration-count: infinite;
+}
+@keyframes birdfly{
+    0% {margin-right:1500px}
+    20% {margin-right:1200px}
+    40% {margin-right:1000px}
+    60% {margin-right:700px}
+    80% {margin-right:500px}
+    85% {margin-right:350px}
+    100% {margin-right:100px}
+}
+.offer{
+    position: absolute;
+    margin-top:100px;
+    font-size: 80px;
+}
+.offer50{
+    position: absolute;
+    margin-top:160px;
+    font-size:40px;
+    color:rgb(231, 38, 13);font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 3px 3px gray;
+    text-decoration:none;
+    animation-duration: 10s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+}
+@keyframes blink{
+    0% {color:white}
+    25% {color:rgb(15, 14, 15)}
+    50% {color:white} 
+    75% { color:black}
+    100% {color:rgb(240, 231, 231)}
+}
+.offer50:hover{
+    color:rgb(243, 235, 235);
+    text-shadow:3px 3px 5px black;
+}
